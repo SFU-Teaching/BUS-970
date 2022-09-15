@@ -6,6 +6,7 @@
 ## REFERENCES / Attribution: 
 # (1) https://data.princeton.edu/R/gettingStarted ,
 # (2) https://bookdown.org/animestina/R_Manchester/basic-principles-of-r-programming.html 
+# (3) https://hastie.su.domains/ISLR2/Labs/Rmarkdown_Notebooks/Ch2-statlearn-lab.html
 ############################################################
 
 
@@ -249,6 +250,18 @@ mean.vec <- fn1(vec)
 ###################################0
 # 4. simple graphing ####
 ###################################0
+# create 2 vectors of 100 random numnbers
+x <- rnorm(100)
+y <- rnorm(100)
+# plot x against y
+plot(x, y)
+
+# plot with labels and texts 
+plot(x, y, xlab = "this is the x-axis",
+    ylab = "this is the y-axis",
+    main = "Plot of X vs Y")
+
+
 # simple graphing
 
 z <- seq(-3, 3, 0.1)
