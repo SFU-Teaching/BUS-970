@@ -1,4 +1,3 @@
-
 ############################################################
 # BUS 961 | Fall 2022 | Session 1
 # Getting Started with R - Data Types and Data Manipulations
@@ -55,7 +54,8 @@ is.character(x)
 x+1
 x <- x+1 # operating value of x
 x
-View(x)
+View(x) 
+
 
 y = 2 # Assign value 2 to another object
 
@@ -135,7 +135,6 @@ x[3]
 x[5]
 x[5] - x[99]
 
-### D100 STOP # 18-JAN 
 
 # let's create a matrix
 M = matrix(1:12, 3, 4) # the colon implies sequences
@@ -202,7 +201,6 @@ x <- x[1:15] # removing all "Treatments"
 x    
 plot(x)  # labels stay! even if no values for treatment
 
-## E100
 
 ### NOTE # Special cases:   
 #1:   NA, stands for "not applicable" and is used for missing data. 
@@ -232,7 +230,7 @@ sum(vec)/length(vec)
 # let's make this function as an obhject
 fn1 <- function(x){
   sum(x)/length(x)}
-   # stored in environment!
+# stored in environment!
 # the code inside the object fn1 is reusable
 
 
