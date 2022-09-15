@@ -3,7 +3,7 @@
 # BUS 961 | Fall 2022 | Session 1
 # Getting Started with R - Data Types and Data Manipulations
 # CK 
-# 18 JAN 2022 
+# 15 SEP 2022 
 ## REFERENCES / Attribution: 
 # (1) https://data.princeton.edu/R/gettingStarted ,
 # (2) https://bookdown.org/animestina/R_Manchester/basic-principles-of-r-programming.html 
