@@ -205,6 +205,24 @@ plot(Model4, main = "Model 4")
 ## Multiple LINEAR MODEL
 #################################################
 
+require(PerformanceAnalytics)
+
+dt <- fread("C:/Users/kalig/Dropbox/SFU TEACHING/PhD BUS  961 Quant Methods/961 SLIDES and Notes/References/data-1/shark_attacks.csv")
+
+stargazer(dt, type="text")
+
+chart.Correlation(dt)
+
+sharks_model_1 <- lm(SharkAttacks~IceCreamSales, data=dt)
+sharks_model_2 <- lm(SharkAttacks~IceCreamSales+Temperature, data=dt)
+sharks_model_3 <- lm(SharkAttacks~., data=dt)
+
+stargazer(sharks_model_1,sharks_model_2,sharks_model_3, type = "text")
+
+anova(sharks_model_1,sharks_model_2)
+
+
+####
 # Let's use a regular dataset
 library(datasets)
 ?mtcars
@@ -225,14 +243,14 @@ round(cor(dt),2) # round to 2 digits
 # refer2 : http://www.sthda.com/english/wiki/correlation-matrix-a-quick-start-guide-to-analyze-format-and-visualize-a-correlation-matrix-using-r-software 
 
 # with statistical significance
-library("Hmisc")
-rcorr(as.matrix(dt))
+#library("Hmisc")
+#rcorr(as.matrix(dt))
 # correlations in table 1
 # p values in table 2
 
 ##install.packages("PerformanceAnalytics")
-#library(PerformanceAnalytics)
-#chart.Correlation(dt, histogram=TRUE, pch=19) # get's busy
+library(PerformanceAnalytics)
+chart.Correlation(dt, histogram=TRUE, pch=19) # get's busy
 ## to make this unbusy, use only variables in your interest.
 ## MPG is correlated on everything!
 #chart.Correlation(dt[,c(1,3,4,5,6,7)], histogram=TRUE, pch=19) # shows statistical correlations
