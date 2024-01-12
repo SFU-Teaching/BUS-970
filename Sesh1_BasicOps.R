@@ -1,10 +1,10 @@
 ############################################################
-# BUS 961 | Fall 2022 | Session 1
+# BUS 970 | Spring 2024 | Session 1
 # Getting Started with R - Data Types and Data Manipulations
 # CK 
-# 15 SEP 2022 
+# 12-Jan-2024
 ## REFERENCES / Attribution: 
-# (1) https://data.princeton.edu/R/gettingStarted ,
+# (1) https://grodri.github.io/R/ 
 # (2) https://bookdown.org/animestina/R_Manchester/basic-principles-of-r-programming.html 
 # (3) https://hastie.su.domains/ISLR2/Labs/Rmarkdown_Notebooks/Ch2-statlearn-lab.html
 ############################################################
