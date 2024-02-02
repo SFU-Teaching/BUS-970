@@ -122,7 +122,7 @@ dt <- iris # assign dataset to object dt
   
 #4 Misc. Short cut functions  #####
   # 4.1 sappply to to apply a particular function over a list or vector. 
-  ## i.e. Use it, to compute a function for each column in a data frame, like mean, sd, var, min, quantile, â¦
+  ## i.e. Use it, to compute a function for each column in a data frame, like mean, sd, var, min, quantile, etc..
   # row  output
   sapply(dt[, -5], mean)
   
